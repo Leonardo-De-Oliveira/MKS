@@ -1,0 +1,28 @@
+@use '../1-base/_variables'
+@use '../3-modules/_modules-mixins'
+    
+.cart-items
+    background-color: variables.$light-color
+    width: 385px
+    heigth: 101px
+    border-radius: 8px
+    @include modules-mixins.center
+    flex-direction: row
+    justify-content: space-around
+    margin: 20px 0
+    position: relative
+    
+    img
+        width: 70px
+        height: 61px
+    
+    .name-item
+        width: 113px
+        font-size: 13px
+        font-weight: 400
+
+    .price-cart
+        font-weight: 700
+        font-size: 14px
+        line-height: 17px
+        margin-top: 5px

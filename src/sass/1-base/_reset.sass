@@ -1,0 +1,22 @@
+@use 'variables'
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: "Montserrat", sans-serif
+
+body
+    background-color: variables.$bg-color
+
+
+body::-webkit-scrollbar 
+    width: 12px
+
+body::-webkit-scrollbar-track 
+    background: #fff
+
+body::-webkit-scrollbar-thumb 
+    background-color: variables.$bg-dark-color
+    border-radius: 20px
+    border: 1px solid variables.$bg-color
